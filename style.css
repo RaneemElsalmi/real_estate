@@ -1,0 +1,509 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Work Sans', sans-serif;
+    max-width: 100%;
+}
+/* Utility Classes */
+.contariner{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+.main-color{
+    color: #15628f;
+}
+:root{
+    --h1-font: 5rem;
+    --h2-font: 2.9rem;
+    --p-font: 1.1rem;
+    --bg-color: #ffffff;
+    --text-color: #121b25;
+    --main-color: #15628f;
+    --other-color: #d6d6d6;
+
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+
+} 
+/* header start  */
+header{
+    height: 100vh;
+    background: url(.//img/photo_1_2023-11-02_21-24-58.jpg )center center/cover no-repeat;
+    position: relative;
+   
+}
+.shareBtn{
+  
+   background: var(--main-color);
+   margin-left: 20px;
+   letter-spacing: 1px;
+   transition: all 0.4s ease ;
+   
+}
+.shareBtn:hover{
+ background-color: var(--main-color);
+   border-radius: 30pt;
+  
+}
+.logo{
+    background-color: #d6d6d6;
+    margin: 50px;
+    margin-left: 100px;
+    padding-left: 9px;
+    padding-right: 9px;
+   
+}
+.logo img{
+    height: 60px;
+    width: 60px;
+    object-fit: contain ;
+  
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.navbar{
+    display: flex;
+    margin-right: 100px;   
+}
+
+.logo p{
+   
+    font-size: var(--p-font);
+    font-weight: 900;
+    color: var(--main-color);
+    padding: 4PX ;  
+}
+.navbar a{
+    padding: 10px 20px;
+    font-size: var(--p-font);
+    font-weight: 1000;
+    color: var(--bg-color);
+    transition: all 0.4s ease ;
+
+}
+.navbar a:hover{
+  
+   border-bottom: 4px solid #15628f;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0,0, 0.6);
+}
+header *{
+    z-index: 10;
+}
+ header .content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 75vh;
+      color: var(--bg-color);
+ }  
+ header .content h1{
+    font-size: 40px;
+ }
+ header .content p{
+    margin: 20px 0px 40px; 
+   
+ }
+ 
+ .h-search form{
+    position: relative;
+    width: 410px;
+    max-width: 100%;
+ }
+ .h-search form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 17px 130px 16px 15px;
+    border: 2px solid var(--main-color);
+    border-radius: 70rem;
+ }
+ .h-search form input:last-child{
+    position: absolute;
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 70rem;
+    box-shadow: 0px 0px 5px #fff , 0px 0px 15px #868686;
+    top: 6px;
+    right: 6px;
+ }
+/* header End  */
+/* About Start  */
+
+ #about{
+    height: 100vh;
+    padding: 5rem 0;
+    background-color: #9cd4f4;
+ }
+ #selling h2 ,
+ #renting h2,
+ #buying h2,
+ #about h2{
+    text-align: center;
+    font-size: 38px;
+    color: var(--bg-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+ }
+ #selling hr,
+ #renting hr,
+ #buying hr,
+ #about hr{
+    width: 250px;
+    height: 3px;
+    background-color:var(--main-color);
+    border: none;
+    margin: 5px auto 0;
+    
+ }
+ #about .about-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    column-gap: 3rem;
+ }
+ #about .about-content .col-3,
+ #about .about-content .col-1{
+    margin-top: 5rem;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 50px;
+}
+#about .about-content .col-1 .we{
+    margin-bottom: 0px;
+}
+#about .about-content .col-3 h3:hover,
+#about .about-content .col-3:hover,
+#about .about-content .col-1 h3:hover,
+#about .about-content .col-1:hover{
+    background-color: #121b25;
+    color : #fff;
+    
+}
+    
+
+ #about .about-content .col-2 img{
+    margin-top: 4rem;
+    height: 400px;
+    width: 250px;
+    object-fit: cover ;
+    padding-top: 35px;
+ }
+ 
+ #about .about-content .col-3 h3{
+    font-size: 28px;
+    color: #121b25;
+    margin-bottom: 40px;
+ }
+ #about .about-content .col-3 p{
+    margin-top: 20px;
+ }
+ #about .about-content .col-1 h3{
+    font-size: 28px;
+    color: #121b25;
+    margin-bottom: 20px;
+ }
+/* About End  */
+/* buy ,rent start  */
+#renting {
+    margin-top: 150px;
+}
+#selling,
+#renting,
+#buying{
+    background-color: var(--bg-color);
+    height: 165vh;
+    padding: 3rem 0;
+}
+#selling h2 ,
+#renting h2,
+#buying h2{
+    color: #63afdb;
+}
+#renting .rent-center,
+#buying .buy-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+}
+#renting p,
+#selling p,
+#buying p{
+    margin-top: 20px;
+    text-align: center;
+}
+#renting .rent-center .col-1 .a2 p,
+#renting .rent-center .col-2 .a2 p,
+#renting .rent-center .col-3 .a2 p, 
+#buying .buy-center .col-1 .a2 p,
+#buying .buy-center .col-2 .a2 p,
+#buying .buy-center .col-3 .a2 p {
+color:var(--bg-color);
+font-weight: 600;
+}
+#renting .rent-center .col-1 .a1 p,
+#renting .rent-center .col-2 .a1 p,
+#renting .rent-center .col-3 .a1 p, 
+#buying .buy-center .col-1 .a1 p,
+#buying .buy-center .col-2 .a1 p,
+#buying .buy-center .col-3 .a1 p {
+color:var(--bg-color);
+font-weight: 600;
+}
+#renting .rent-center .col-1 .a2 ,
+#renting .rent-center .col-2 .a2 ,
+#renting .rent-center .col-3 .a2 ,
+#buying .buy-center .col-1 .a2,
+#buying .buy-center .col-2 .a2,
+#buying .buy-center .col-3 .a2{
+    margin-top: 5rem;
+    background-color:  #63afdb;
+    padding: 0px 30px;
+    text-align: center;
+    border-radius: 50px;
+    padding-bottom: 20px;
+    
+}
+#renting .rent-center .col-1 .a1 ,
+#renting .rent-center .col-2 .a1 ,
+#renting .rent-center .col-3 .a1 ,
+#buying .buy-center .col-1 .a1 ,
+#buying .buy-center .col-2 .a1 ,
+#buying .buy-center .col-3 .a1 {
+    margin-top: 5rem;
+    background-color: #63afdb;
+    padding: 0px 30px;
+    text-align: center;
+    border-radius: 50px;
+    padding-bottom: 20px;
+}
+#renting .rent-center .col-1 img,
+#renting .rent-center .col-2 img ,
+#renting .rent-center .col-3 img ,
+#buying .buy-center .col-3  img,
+#buying .buy-center .col-2  img,
+#buying .buy-center .col-1  img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover ;
+    padding-top: 35px;
+    border-radius: 50px;
+}
+/* #renting input ,
+#buying input{
+    background-color: green;
+    color: var(--bg-color);
+    font-size: 400;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    padding: 30px 50px;
+    border-radius: 15px;
+    margin-left: 600px;
+    margin-top: 100px;
+} */
+#buying .col-2 input ,
+#renting .col-2 input {
+    background-color: green;
+    color: var(--bg-color);
+    font-size: 400;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 90px;
+    padding: 30px 50px;
+    border-radius: 15px;
+}
+#selling .Send input:hover,
+#renting input:hover ,
+#buying input:hover{
+    background-color: rgb(4, 53, 4);
+}
+#selling h2,
+#renting h2{
+    margin-bottom: 20px;
+}
+/* buy end  */
+/* #selling start  */
+#selling{
+    height: 200vh;
+    padding: 5rem 0;
+    margin-left: 40PX;
+    margin-top: 50PX;
+
+}
+#selling .center{
+    background-color: #63afdb;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 50px;
+    align-items: center;
+    padding: 60px 0px;
+    width: 60%;
+    border-radius: 20px;
+}
+#selling .center .email,
+#selling .center .type,
+#selling .center .address,
+#selling .center .price,
+#selling .center .name{
+    margin-bottom: 40PX;
+}
+#selling .center .name input,
+#selling .center .email input{
+    width: 300px ;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 100px;
+}
+#selling .center .type input,
+#selling .center .address input,
+#selling .center .price input{
+    width: 300px ;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+}
+#selling .center .email label,
+#selling .center .name label{
+    font-size: 20px;
+    font-weight: 800;
+}
+#selling .center .type label,
+#selling .center .address label,
+#selling .center .price label{
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+#selling .Send input{
+    background-color: green;
+    color: var(--bg-color);
+    font-size: 400;
+    font-weight: 500;
+    display: inline-block;
+    padding: 30px 50px;
+    border-radius: 15px;
+  
+}
+/* #selling end */
+/* Contact Section start */
+#contact {
+    background: var(--bg-color);
+    padding: 5rem 0;
+    margin :50px ;
+    height: 100vh;
+   
+   
+  }
+  
+  #contact .container {
+    max-width: 900px;
+    margin-left: 30px;
+  }
+  
+  #contact .contact-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  #contact .contact-info {
+    width: 50%;
+  }
+  
+  #contact .contact-info div {
+    margin: 30px 0;
+    line-height: 1.7;
+  }
+  
+  #contact .contact-info h3 {
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+  }
+  
+  #contact .contact-info p {
+    color: #9a9a9a;
+  }
+  
+  #contact .contact-info p i {
+    color: #63afdb;
+    margin-right: 3px;
+  }
+  
+  #contact .contact-info a i {
+    color: #fff;
+    background: #383848;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+  
+  #contact .contact-info a i:hover {
+    background-color:  #63afdb;
+    color: #383848;
+  }
+  
+  #contact form {
+    width: 50%;
+  }
+  
+  #contact form input,
+  #contact textarea {
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #e3e2dd;
+  }
+  
+  form input:focus,
+  textarea:focus {
+    outline: none;
+  }
+  
+  form button {
+    color: #fff;
+  }
+  form .bt {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #63afdb;
+  }
+  form .bt:hover {
+  background-color: #15628f;
+  }
+  
+  /* Contact Section End */
+  
